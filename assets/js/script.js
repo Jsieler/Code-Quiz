@@ -7,35 +7,58 @@ var showHighScoresEl = document.querySelector("#showHighScores");
 var answerCorrectEl = document.querySelector("#answer-correct");
 var answerIncorrectEl = document.querySelector("#answer-incorrect");
 
-// Questions 
-var questions = [
+const questions = [
     {
         question: 'JQuery is a ___ Library.',
-        answers: ['1. JavaScript', '2. HTML', '3. Java', '4. CSS'],
-        correctAnswer: '1. JavaScript'
+        answers: {
+            A: "JavaScript",
+            B: "HTML",
+            C: "Java",
+            D: "CSS"
+        },
+        correctAnswer: "A"
     },
     {
-        question: 'Arrays in JavaScript can be used to store _____.',
-        answers: ['1. other arrays', '2. booleans', '3. numbers and strings', '4. all of the above'],
-        correctAnswer: '4. all of the above'
+        question: "Arrays in JavaScript can be used to store _____?",
+        answers: {
+            A: "other arrays",
+            B: "booleans",
+            C: "numbers and strings",
+            D: "all of the above"
+        },
+        correctAnswer: "D"
     },
     {
-        question: 'When a web page is loaded, the browser creates a _____ of the page.',
-        answers: ['1. Document Oriented Object', '2. Document Object Model', '3. Document Tree', '4. Document Model'],
-        correctAnswer: '2. Document Object Model'
+        question: "How do you make a comment in Javascript?",
+        answers: {
+            A: "'This is a comment",
+            B: "//This is a comment",
+            C: "<!--This is a comment-->",
+            D: "Var Comment"
+        },
+        correctAnswer: "B"
     },
     {
-        question: 'Javascript uses the ___ keyword to declare a variable.',
-        answers: ['1. variable', '2. vari', '3. var', '4. Variable'],
-        correctAnswer: '3. var'
+        question: "When a web page is loaded, the browser creates a _____ of the page?",
+        answers: {
+            A: "Document Oriented Object",
+            B: "Document Tree",
+            C: "Document Object Model",
+            D: "Document Model"
+        },
+        correctAnswer: "C"
     },
     {
-        question: 'Which of the following is NOT a Javascript logical operator?',
-        answers: ['1. &&', '2. ||', '3. !', '4. +='],
-        correctAnswer: '4. +='
+        question: "Javascript uses the ___ keyword to declare a variable?",
+        answers: {
+            A: "var",
+            B: "variable",
+            C: "Variable",
+            D: "vari"
+        },
+        correctAnswer: "A"
     }
-];
-
+]
 
 // Start function on click
 var startQuiz = function(){
